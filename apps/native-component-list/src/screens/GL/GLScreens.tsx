@@ -38,6 +38,9 @@ const GLScreens: Screens = {
       gl.clearColor(0, 0, 1, 1);
       // tslint:disable-next-line: no-bitwise
       gl.clear(gl.COLOR_BUFFER_BIT | gl.DEPTH_BUFFER_BIT);
+      console.log(gl.getSupportedExtensions());
+      console.log(gl.getExtension('EXT_texture_filter_anisotropic'));
+      console.log(gl.getExtension('OES_texture_float_linear'));
       gl.endFrameEXP();
     }),
   },
